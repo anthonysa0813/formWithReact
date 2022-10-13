@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 import { useForm } from "../hooks/useForm";
 import { FormContainer, MainContainer } from "../styles/login";
-
+import logo from "../assets/logo.jpg";
 interface PropLogin {
   setShowComponent: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -34,7 +34,13 @@ const Login = ({ setShowComponent }: PropLogin) => {
 
   return (
     <MainContainer className="">
-      <div className="wrapperMain">
+      <div className="wrapperMain ">
+        <div className="logoContainer">
+          <img src={logo} alt="" />
+          <p className="textGray">
+            <span className="text-purple">Mercury</span>Cash
+          </p>
+        </div>
         <FormContainer onSubmit={handleSubmit}>
           <h1>Welcome Back</h1>
           {error && (

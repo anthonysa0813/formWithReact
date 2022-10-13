@@ -7,6 +7,7 @@ import { getCountries } from "../utils/api/useFetch";
 import { BiSearch } from "react-icons/bi";
 import Button from "../components/Button";
 import { useForm } from "../hooks/useForm";
+import logo from "../assets/logo.jpg";
 
 interface Prop {
   setShowComponent: React.Dispatch<React.SetStateAction<boolean>>;
@@ -49,6 +50,12 @@ const Register = ({ setShowComponent }: Prop) => {
   return (
     <MainContainer>
       <div className="wrapperMain">
+        <div className="logoContainer">
+          <img src={logo} alt="" />
+          <p className="textGray">
+            <span className="text-purple">Mercury</span>Cash
+          </p>
+        </div>
         <FormContainer onSubmit={handleSubmit}>
           <h1>Create your account</h1>
           {error && (

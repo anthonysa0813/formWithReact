@@ -12,6 +12,19 @@ export const MainContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    .logoContainer {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block-end: 50px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .messageBottom {

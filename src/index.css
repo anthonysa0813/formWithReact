@@ -34,3 +34,13 @@ h6 {
 .alert {
   color: red;
 }
+
+.text-purple {
+  color: var(--bg-primary);
+  font-weight: bold;
+}
+
+.textGray {
+  color: var(--bg-gray200);
+  font-weight: bold;
+}
