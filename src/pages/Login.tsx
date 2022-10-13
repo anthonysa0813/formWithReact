@@ -3,7 +3,15 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 import { FormContainer, MainContainer } from "../styles/login";
 
-const Login = () => {
+interface PropLogin {
+  setShowComponent: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Login = ({ setShowComponent }: PropLogin) => {
+  const showRegister = () => {
+    setShowComponent((state) => !state);
+  };
+
   return (
     <MainContainer className="">
       <div className="wrapperMain">
@@ -26,7 +34,8 @@ const Login = () => {
         </FormContainer>
         <div className="messageBottom ">
           <p>
-            Don't have an account? <span>Sign up</span> instead.
+            Don't have an account? <span onClick={showRegister}>Sign up</span>{" "}
+            instead.
           </p>
         </div>
       </div>
