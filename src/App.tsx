@@ -10,7 +10,7 @@ const App = () => {
       {showComponent ? (
         <Login setShowComponent={setShowComponent} />
       ) : (
-        <Register />
+        <Register setShowComponent={setShowComponent} />
       )}
     </>
   );

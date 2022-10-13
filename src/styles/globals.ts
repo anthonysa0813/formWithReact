@@ -17,3 +17,20 @@ export const ButtonContainer = styled.button`
   border-radius: 100px;
   border: none;
 `;
+
+export const SelectContainer = styled.div`
+  border: 1px solid var(--bg-gray200);
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 0.5rem 0.75rem;
+  background-color: white;
+  svg {
+    color: var(--bg-primary);
+  }
+  select {
+    width: 100%;
+    border: none;
+    color: var(--bg-primary);
+  }
+`;

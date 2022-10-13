@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { CountriesListResponse } from "../interfaces";
 
-const InputSelect = () => {
-  return (
-    <div>
-      <select name="" id=""></select>
-    </div>
-  );
+import { SelectContainer } from "../styles/globals";
+
+interface Prop {
+  children: JSX.Element[] | JSX.Element;
+}
+
+const InputSelect = ({ children }: Prop) => {
+  return <SelectContainer>{children}</SelectContainer>;
 };
 
 export default InputSelect;

@@ -47,4 +47,16 @@ export const FormContainer = styled.form`
     display: flex;
     justify-content: flex-end;
   }
+
+  .termsContainer {
+    display: flex;
+    align-items: center;
+    input {
+      border-radius: 50%;
+    }
+    span {
+      color: var(--bg-primary);
+      font-weight: bold;
+    }
+  }
 `;
