@@ -1,0 +1,31 @@
+:root {
+  --bg-primary: #5d3bd9;
+  --bg-primaryLight: #7d5cf4;
+  --bg-secondary: #f6f7fb;
+  --bg-dark: #1c1a1a;
+  --bg-gray100: #e1e1e1;
+  --bg-gray200: #bcbcbc;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Comic Neue", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.bg-primary {
+  border: 1px solid var(--bg-primary);
+}
+
+.debug {
+  border: 3px solid brown;
+}
